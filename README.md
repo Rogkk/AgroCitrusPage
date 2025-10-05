@@ -123,7 +123,9 @@ CLIP is trained on **millions of image-caption pairs**, aligning **related image
 # How to Run the Model
 
 ### Drive / Setup
-Make sure your dataset and scripts are available in your working directory or Google Drive.
+Download or access the necessary files from the Google Drive folder:  
+[Access Google Drive](https://drive.google.com/drive/folders/1cNUnDcWw_KWFhwOR9JDMLZPxZsjevc6N?usp=drive_link)
+
 
 ---
 
@@ -145,4 +147,5 @@ python prepare_dataset.py
 ```bash
 python data_treino.py --csv dados.csv --root "Soil types" --batch 4 --epochs 150 --num-workers 0
 ```
+
 
