@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgroCitrus — AgrominerAção Espacial</title>
+  <meta name="description" content="AgroCitrus — agromineração de citrus em solo marciano com IA e biossensores de bagaço de cana." />
+  <style>
+    :root{
+      --accent-1:#64b1ce; /* teal */
+      --accent-2:#6971b3; /* violet */
+      --bg:#0f0b10;
+      --card:#141218;
+      --muted:#bfc7d1;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      --radius:14px;
+      font-family: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#0b0810 0%, #120913 60%);color:#fff}
+    a{color:var(--accent-1);text-decoration:none}
+    header{padding:28px 20px;display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{
+      width:78px;height:78px;border-radius:12px;overflow:hidden;flex:0 0 78px;border:3px solid rgba(255,255,255,0.06);background:linear-gradient(135deg,var(--accent-2),var(--accent-1));display:grid;place-items:center;box-shadow:0 6px 24px rgba(0,0,0,0.6)
+    }
+    .logo img{width:100%;height:100%;object-fit:cover}
+    .brand h1{font-size:20px;margin:0}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+
+    main{max-width:var(--maxw);margin:20px auto;padding:20px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:var(--radius);box-shadow:0 10px 40px rgba(0,0,0,0.6);backdrop-filter:blur(6px)}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-size:13px;margin-bottom:12px}
+    h2{margin:0 0 12px 0;font-size:30px}
+    p.lead{color:var(--muted);line-height:1.5}
+
+    .hero-visual{border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,0.6);background:#111}
+    .hero-visual img{display:block;width:100%;height:100%;object-fit:cover}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature{background:var(--card);padding:16px;border-radius:10px}
+    .feature h4{margin:0 0 8px 0}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    .section{margin-top:28px}
+    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:18px}
+
+    .card{background:var(--card);padding:18px;border-radius:12px}
+
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;margin-top:8px}
+    form label{font-size:13px;color:var(--muted)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent-1),var(--accent-2));color:#071022;font-weight:700;border:none;cursor:pointer;margin-top:12px}
+
+    footer{margin:40px auto 90px;max-width:var(--maxw);padding:20px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr} .hero-visual{order:-1}} 
+    @media (max-width:540px){.features{grid-template-columns:1fr} .grid-2{grid-template-columns:1fr} header{padding:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">
+        <!-- embedded image reference (replace path if needed) -->
+        <img src="oi.png" alt="AgroCitrus logo" />
+      </div>
+      <div>
+        <h1>AgroCitrus</h1>
+        <p>AgrominerAção • Citrus • Espaço • Solo Marciano</p>
+      </div>
+    </div>
+    <nav style="display:flex;gap:12px;align-items:center">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <span class="kicker">Research & ISRU</span>
+        <h2>AI-driven agromining for planetary soils</h2>
+        <p class="lead">AgroCitrus combines imaging, AI soil intelligence and bio-derived bagasse sensors to scout mineral-rich zones and guide sampling—designed for low-mass, high-value planetary exploration missions.</p>
+
+        <div class="features section" id="features">
+          <div class="feature">
+            <h4>Imaging & AI</h4>
+            <p>Multispectral and RGB analysis with computer-vision models to classify regolith, detect alteration halos and estimate mineral prospectivity.</p>
+          </div>
+          <div class="feature">
+            <h4>Depth Projection</h4>
+            <p>Shallow geophysics + terrain analysis feed 3D models to project mineral likelihood at depth and prioritize sampling.</p>
+          </div>
+          <div class="feature">
+            <h4>Bagasse Biosensors</h4>
+            <p>Sugarcane bagasse–derived biosorbents (biochar/functionalized cellulose) bind trace metals for lightweight detection in drill cuttings or leachates.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+          <button class="btn" onclick="location.href='#contact'">Contact Team</button>
+          <a href="#about" style="padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);">Learn more</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- hero art: if you want a higher-res version swap the path -->
+        <img src="oi.png" alt="AgroCitrus visual" />
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="card">
+        <h3>About the solution</h3>
+        <p style="color:var(--muted);line-height:1.6">AgroCitrus is an integrated platform that fuses orbital and surface imagery with on-site biosensing to identify mineral signatures in planetary soils. Our AI models classify soil types and spectral fingerprints while a compact lab-on-chip uses treated bagasse cartridges to selectively bind and reveal trace metals. The system outputs ranked targets, sampling plans and uncertainty-aware guidance for rover operations and human teams.</p>
+      </div>
+    </section>
+
+    <section class="section grid-2">
+      <div>
+        <div class="card">
+          <h4>Applications</h4>
+          <ul style="color:var(--muted)">
+            <li>ISRU scouting (metals, oxygen-bearing minerals)</li>
+            <li>Greenhouse site selection and water-ice detection</li>
+            <li>Low-mass biosensing for field validation of drill samples</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4>Deliverables</h4>
+          <ul style="color:var(--muted)">
+            <li>Mineral probability maps & 3D depth estimates</li>
+            <li>Field kit: imaging workflow + biosorbent cartridges</li>
+            <li>On-device AI models for rover/drone deployment</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside id="contact" class="card">
+        <h4>Contact the AgroCitrus team</h4>
+        <p style="color:var(--muted)">Best contact: <strong>paulac.usp@gmail.com</strong></p>
+
+        <form id="contactForm" onsubmit="return sendMail(event)">
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Short message" required></textarea>
+          <button class="btn" type="submit">Send email</button>
+        </form>
+        <p style="color:var(--muted);font-size:13px;margin-top:12px">This form composes an email locally. No server needed.</p>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© AgroCitrus — AgrominerAção Espacial</div>
+    <div style="text-align:right">Contact: <a href="mailto:paulac.usp@gmail.com">paulac.usp@gmail.com</a></div>
+  </footer>
+
+  <script>
+    function sendMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('AgroCitrus inquiry from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      const mailto = `mailto:paulac.usp@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+      return false;
+    }
+
+    // small accessibility: keyboard focus outline
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelectorAll('button,a,input,textarea').forEach(el=>el.addEventListener('focus', ()=>el.style.outline='2px solid rgba(100,177,206,0.28)'))
+    })
+  </script>
+</body>
+</html>
+
