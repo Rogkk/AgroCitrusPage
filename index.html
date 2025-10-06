@@ -144,7 +144,7 @@
 
       <aside id="contact" class="card">
         <h4>Contact the AgroCitrus team</h4>
-        <p style="color:var(--muted)">Best contact: <strong>paulac.usp@gmail.com</strong></p>
+        <p style="color:var(--muted)">Best contact: <strong>astrocitrus@gmail.com</strong></p>
 
         <form id="contactForm" onsubmit="return sendMail(event)">
           <label for="name">Name</label>
@@ -163,7 +163,7 @@
 
   <footer>
     <div>© AgroCitrus — AgrominerAção Espacial</div>
-    <div style="text-align:right">Contact: <a href="mailto:paulac.usp@gmail.com">paulac.usp@gmail.com</a></div>
+    <div style="text-align:right">Contact: <a href="mailto:astrocitrus@gmail.com">astrocitrus@gmail.com</a></div>
   </footer>
 
   <script>
@@ -174,7 +174,7 @@
       const message = document.getElementById('message').value.trim();
       const subject = encodeURIComponent('AgroCitrus inquiry from ' + name);
       const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
-      const mailto = `mailto:paulac.usp@gmail.com?subject=${subject}&body=${body}`;
+      const mailto = `mailto:astrocitrus@gmail.com?subject=${subject}&body=${body}`;
       window.location.href = mailto;
       return false;
     }
